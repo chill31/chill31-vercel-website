@@ -2,12 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
+}
+
+.mobileMenu {
+  transform: translateX(150vw);
+  transition: transform 400ms ease;
+}
+
+.show {
+  transform: translateX(0);
 }

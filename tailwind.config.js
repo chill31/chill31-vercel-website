@@ -11,10 +11,12 @@ module.exports = {
   theme: {
     extend: {
       fontSize: {
-        "1.5xl": "1.345rem" // between 1xl and 2xl
+        "1.5xl": "1.345rem", // between 1xl and 2xl
+        "7.5xl": "5.75rem" // title font size when in small screens
       },
       screens: {
-        'skw': '690px' // when skills wrapper is wrapped down to one element per view 
+        'skw': '750px', // the media width when mobile menu needs to pop up and everything needs to scale down
+        'mb': '430px' // smaller breakpoint for mobile devices
       }
     },
   },
