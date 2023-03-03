@@ -63,9 +63,10 @@ export default function Home() {
 
     }, { threshold: .5 });
 
-    const observerElements = document.querySelectorAll("#about > *, #skills > * > *, #projects > * > *");
+    const observerElements = document.querySelectorAll("#about > *, #skills > * > *, #projects > * > *, #contact > *");
     observerElements.forEach((el) => {
       el.style.opacity = 0;
+      el.style.transform = 'unset';
       el.style.transition = '200ms ease';
       el.style.transitionProperty = 'opacity';
 
@@ -96,6 +97,10 @@ export default function Home() {
           <Link className='group text-xl font-mono cursor-pointer opacity-0 translate-y-[-10rem] delay-[400ms] transition-all duration-200' href="#projects">
             <span className='text-cyan-400 group-hover:text-cyan-300'>03. </span>
             <span className='text-white group-hover:text-cyan-300'>Projects</span>
+          </Link>
+          <Link className='group text-xl font-mono cursor-pointer opacity-0 translate-y-[-10rem] delay-[600ms] transition-all duration-200' href="#contact">
+            <span className='text-cyan-400 group-hover:text-cyan-300'>04. </span>
+            <span className='text-white group-hover:text-cyan-300'>Contact</span>
           </Link>
         </div>
 
@@ -227,6 +232,13 @@ export default function Home() {
 
       </section>
 
+      <section className='w-[100%] min-h-[700px] relative flex flex-col gap-16' id="contact">
+
+        <h1 className='text-9xl font-serif text-white opacity-0 duration-300 transition-all max-skw:text-8xl max-mb:text-7xl text-center'>Contact</h1>
+        <p className='text-3xl font-mono text-gray-400 opacity-0 translate-y-[5rem] transition-all max-skw:text-xl max-skw:max-w-[95vw] text-center'>Still here? I hope you found what you were looking for, because there is nothing here. A form is going to be added soon.</p>
+
+      </section>
+
       <div className={`mobileMenu ${menuOpen ? 'show' : ''} w-[100%] h-[100%] fixed top-0 left-0 z-20 bg-slate-900/95 p-10 flex flex-col justify-center items-start gap-10 text-white`}>
 
         <BsXLg className='text-white text-3xl absolute top-6 right-10 cursor-pointer' onClick={() => setMenuOpen(false)} />
@@ -234,6 +246,7 @@ export default function Home() {
         <Link href="#about" className='max-mb:text-2xl text-cyan-400 text-3xl font-mono underline' onClick={() => setMenuOpen(false)}>About</Link>
         <Link href="#skills" className='max-mb:text-2xl text-cyan-400 text-3xl font-mono underline' onClick={() => setMenuOpen(false)}>Skills</Link>
         <Link href="#projects" className='max-mb:text-2xl text-cyan-400 text-3xl font-mono underline' onClick={() => setMenuOpen(false)}>Projects</Link>
+        <Link href="#contact" className='max-mb:text-2xl text-cyan-400 text-3xl font-mono underline' onClick={() => setMenuOpen(false)}>Contact</Link>
         <span className='bg-gray-300 h-[1px] w-[30rem] max-w-[95%]'></span>
         <Link href="https://github.com/chill31" className='max-mb:text-2xl text-cyan-400 text-3xl font-mono underline' onClick={() => setMenuOpen(false)}>Github</Link>
         <Link href="https://chill31.github.io" className='max-mb:text-2xl text-cyan-400 text-3xl font-mono underline' onClick={() => setMenuOpen(false)}>1st Portfolio</Link>

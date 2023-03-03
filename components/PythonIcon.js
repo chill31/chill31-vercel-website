@@ -1,7 +1,7 @@
 export default function PythonIcon() {
 
   return (
-    <svg viewBox="0 0 256 255" xmlns="http://www.w3.org/2000/svg" className="max-mb:scale-125 cursor-pointer" onClick={() => open('https://python.org')} >
+    <svg viewBox="0 0 256 255" xmlns="http://www.w3.org/2000/svg" className="text-5xl cursor-pointer" onClick={() => open('https://python.org')} >
       <defs>
         <linearGradient x1="12.9593594%" y1="12.0393928%" x2="79.6388325%" y2="78.2008538%" id="linearGradient-1">
           <stop stopColor="#387EB8" offset="0%"></stop>
