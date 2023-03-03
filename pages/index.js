@@ -196,25 +196,31 @@ export default function Home() {
           <div onClick={() => { open("https://utility-text.vercel.app") }} className="group rounded-lg cursor-pointer p-10 bg-gray-900/50 flex flex-col gap-8 max-w-[calc(95vw-2.5rem)] w-[25rem] hover:!-translate-y-6 focus:!-translate-y-6 !transition-all outline-none max-h-[27rem]" tabIndex="0">
             <span className='group-hover:text-cyan-400 group-focus:text-cyan-400 font-mono text-5xl text-white transition-colors max-mb:text-4xl'>utility-text</span>
             <span className='font-mono text-xl text-cyan-400'>https://utility-text.vercel.app</span>
-            <p className='text-slate-400 text-2xl max-mb:text-xl font-mono overflow-auto'>an npm package designed to help with strings and numbers providing many utility functions</p>
+            <p className='text-slate-400 text-2xl max-mb:text-xl font-mono overflow-auto' tabIndex="-1">an npm package designed to help with strings and numbers providing many utility functions</p>
           </div>
 
           <div onClick={() => { open('https://chill31-todo.vercel.app') }} className="group rounded-lg cursor-pointer p-10 bg-gray-900/50 flex flex-col gap-8 max-w-[calc(95vw-2.5rem)] w-[25rem] hover:!-translate-y-6 focus:!-translate-y-6 !transition-all outline-none max-h-[27rem]" tabIndex="0">
             <span className='group-hover:text-cyan-400 group-focus:text-cyan-400 font-mono text-5xl text-white transition-colors max-mb:text-4xl'>TO-DO</span>
             <span className='font-mono text-xl text-cyan-400'>https://chill31-todo.vercel.app</span>
-            <p className='text-slate-400 text-2xl max-mb:text-xl font-mono overflow-auto'>an advanced todo with editing and groups features to help organise your tasks</p>
+            <p className='text-slate-400 text-2xl max-mb:text-xl font-mono overflow-auto' tabIndex="-1">an advanced todo with editing and groups features to help organise your tasks</p>
           </div>
 
           <div onClick={() => { open('https://speed-readr.vercel.app') }} className="group rounded-lg cursor-pointer p-10 bg-gray-900/50 flex flex-col gap-8 max-w-[calc(95vw-2.5rem)] w-[25rem] hover:!-translate-y-6 focus:!-translate-y-6 !transition-all outline-none max-h-[27rem]" tabIndex="0">
             <span className='group-hover:text-cyan-400 group-focus:text-cyan-400 font-mono text-5xl text-white transition-colors max-mb:text-4xl'>Speed Readr</span>
             <span className='font-mono text-xl text-cyan-400'>https://speed-readr.vercel.app</span>
-            <p className='text-slate-400 text-2xl max-mb:text-xl font-mono overflow-auto'>a website to help you read faster. There are default tests like 100 words per minute, but you can also create your own customised tests.</p>
+            <p className='text-slate-400 text-2xl max-mb:text-xl font-mono overflow-auto' tabIndex="-1">a website to help you read faster. There are default tests like 100 words per minute, but you can also create your own customised tests.</p>
           </div>
 
           <div onClick={() => { open('https://code-saver.vercel.app') }} className="group rounded-lg cursor-pointer p-10 bg-gray-900/50 flex flex-col gap-8 max-w-[calc(95vw-2.5rem)] w-[25rem] hover:!-translate-y-6 focus:!-translate-y-6 !transition-all outline-none max-h-[27rem]" tabIndex="0">
             <span className='group-hover:text-cyan-400 group-focus:text-cyan-400 font-mono text-5xl text-white transition-colors max-mb:text-4xl'>CodeSaver</span>
             <span className='font-mono text-xl text-cyan-400'>https://code-saver.vercel.app</span>
-            <p className='text-slate-400 text-2xl max-mb:text-xl font-mono overflow-auto'>Saves code in the browser&apos;s local storage so you never lose your code. Add as many snippets as you like. It adds highlighting according to the chosen language</p>
+            <p className='text-slate-400 text-2xl max-mb:text-xl font-mono overflow-auto' tabIndex="-1">Saves code in the browser&apos;s local storage so you never lose your code. Add as many snippets as you like. It adds highlighting according to the chosen language</p>
+          </div>
+
+          <div onClick={() => { open('https://country-info-murex.vercel.app') }} className="group rounded-lg cursor-pointer p-10 bg-gray-900/50 flex flex-col gap-8 max-w-[calc(95vw-2.5rem)] w-[25rem] hover:!-translate-y-6 focus:!-translate-y-6 !transition-all outline-none max-h-[27rem]" tabIndex="0">
+            <span className='group-hover:text-cyan-400 group-focus:text-cyan-400 font-mono text-5xl text-white transition-colors max-mb:text-4xl'>Country Info</span>
+            <span className='font-mono text-xl text-cyan-400'>https://country-info-murex.vercel.app</span>
+            <p className='text-slate-400 text-2xl max-mb:text-xl font-mono overflow-auto' tabIndex="-1">Shows a specific country&apos; information. Things like area, population and languages are shown and works in mobile. Ignore the <code>murex</code> in the domain</p>
           </div>
 
         </div>
