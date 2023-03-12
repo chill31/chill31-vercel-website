@@ -2,10 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useEffect, useState } from 'react';
 
-import PythonIcon from '../components/PythonIcon';
-import EmmetIcon from '../components/EmmetIcon';
-
-import { FaReact, FaHtml5, FaCss3, FaJs, FaNodeJs, FaGithub } from 'react-icons/fa'
+import { FaReact, FaHtml5, FaCss3, FaJs, FaNodeJs, FaGithub, FaPython } from 'react-icons/fa'
 import { SiNextdotjs, SiExpress, SiFirebase, SiMysql, SiGnubash, SiMongodb, SiTailwindcss, SiVisualstudiocode } from 'react-icons/si'
 import { BsList, BsXLg } from 'react-icons/bs'
 
@@ -161,7 +158,7 @@ export default function Home() {
             <span className='text-cyan-400 font-mono text-4xl'>Languages</span>
             <div className='grid grid-cols-3 mt-8 gap-4 place-items-center'>
 
-              <PythonIcon />
+              <FaPython className='text-amber-300 text-5xl cursor-pointer' onClick={() => open('https://www.python.org/')} />
               <SiMysql className='text-white text-5xl cursor-pointer' onClick={() => { open('https://www.mysql.com/') }} />
               <FaJs className='text-amber-300 text-5xl cursor-pointer' onClick={() => { open('https://www.w3.org/standards/webdesign/script') }} />
               <SiGnubash className='text-slate-200 text-5xl cursor-pointer' onClick={() => { open('https://www.gnu.org/software/bash/') }} />
@@ -175,7 +172,6 @@ export default function Home() {
               <FaGithub className='text-white text-5xl cursor-pointer' onClick={() => { open('https://github.com') }} />
               <SiTailwindcss className='text-cyan-500 text-5xl cursor-pointer' onClick={() => { open('https://tailwindcss.com') }} />
               <SiVisualstudiocode className='text-blue-400 text-5xl cursor-pointer' onClick={() => { open('https://code.visualstudio.com/') }} />
-              <EmmetIcon />
 
             </div>
           </div>
