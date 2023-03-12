@@ -224,16 +224,16 @@ export default function Home() {
             <p className='text-slate-400 text-2xl max-mb:text-xl font-mono overflow-auto' tabIndex="-1">Shows a specific country&apos; information. Things like area, population and languages are shown and works in mobile. Ignore the murex in the domain</p>
           </div>
 
+          <div onClick={() => { open('https://qr-utility.vercel.app') }} className="group rounded-lg cursor-pointer p-10 bg-gray-900/50 flex flex-col gap-8 max-w-[calc(95vw-2.5rem)] w-[25rem] hover:!-translate-y-6 focus:!-translate-y-6 !transition-all outline-none max-h-[27rem] h-[27rem]" tabIndex="0">
+            <span className='group-hover:text-cyan-400 group-focus:text-cyan-400 font-mono text-5xl text-white transition-colors max-mb:text-4xl'>QR Utility</span>
+            <span className='font-mono text-xl text-cyan-400'>https://qr-utility.vercel.app</span>
+            <p className='text-slate-400 text-2xl max-mb:text-xl font-mono overflow-auto' tabIndex="-1">This website&apos;s main focus is QR Codes. You can generate new QR Codes or read the contents of already existing QR Codes.</p>
+          </div>
+
           <div onClick={() => { open('https://chill-notes.vercel.app') }} className="group rounded-lg cursor-pointer p-10 bg-gray-900/50 flex flex-col gap-8 max-w-[calc(95vw-2.5rem)] w-[25rem] hover:!-translate-y-6 focus:!-translate-y-6 !transition-all outline-none max-h-[27rem] h-[27rem]" tabIndex="0">
             <span className='group-hover:text-cyan-400 group-focus:text-cyan-400 font-mono text-5xl text-white transition-colors max-mb:text-4xl'>Chill Notes</span>
             <span className='font-mono text-xl text-cyan-400'>https://chill-notes.vercel.app</span>
             <p className='text-slate-400 text-2xl max-mb:text-xl font-mono overflow-auto' tabIndex="-1">Basic notes app which allows you to store notes in the web without the risk of losing them. Edit and delete the notes as you like.</p>
-          </div>
-
-          <div onClick={() => { open('https://chill-notes.vercel.app') }} className="group rounded-lg cursor-pointer p-10 bg-gray-900/50 flex flex-col gap-8 max-w-[calc(95vw-2.5rem)] w-[25rem] hover:!-translate-y-6 focus:!-translate-y-6 !transition-all outline-none max-h-[27rem] h-[27rem]" tabIndex="0">
-            <span className='group-hover:text-cyan-400 group-focus:text-cyan-400 font-mono text-5xl text-white transition-colors max-mb:text-4xl'>QR Utility</span>
-            <span className='font-mono text-xl text-cyan-400'>https://qr-utility.vercel.app</span>
-            <p className='text-slate-400 text-2xl max-mb:text-xl font-mono overflow-auto' tabIndex="-1">This website&apos;s main focus is QR Codes. You can generate new QR Codes or read the contents of already existing QR Codes.</p>
           </div>
 
         </div>
